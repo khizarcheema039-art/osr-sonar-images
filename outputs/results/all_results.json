@@ -1,0 +1,53 @@
+{
+    "MSP": {
+        "method": "Maximum Softmax Probability (MSP)",
+        "auroc": 0.8165,
+        "ap": 0.5782,
+        "tpr": 0.8487,
+        "fpr": 0.3177,
+        "udr": 0.6823,
+        "threshold": 0.9887,
+        "per_class_detection": {
+            "chain": 60.0,
+            "valve": 85.0,
+            "shampoo-bottle": 57.0,
+            "standing-bottle": 63.0
+        }
+    },
+    "SVDD": {
+        "method": "Deep SVDD (Nearest Centroid)",
+        "auroc": 0.8986,
+        "ap": 0.8275,
+        "tpr": 0.8413,
+        "fpr": 0.1171,
+        "udr": 0.8829,
+        "threshold": -0.684,
+        "per_class_detection": {
+            "chain": 76.0,
+            "valve": 93.0,
+            "shampoo-bottle": 99.0,
+            "standing-bottle": 100.0
+        }
+    },
+    "MetricLearning": {
+        "method": "Deep Metric Learning (Triplet Loss)",
+        "auroc": 0.9255,
+        "ap": 0.8448,
+        "tpr": 0.941,
+        "fpr": 0.2525,
+        "udr": 0.7475,
+        "threshold": -0.712,
+        "per_class_detection": {
+            "chain": 71.0,
+            "valve": 76.0,
+            "shampoo-bottle": 78.0,
+            "standing-bottle": 74.0
+        }
+    },
+    "Baseline_Classifier": {
+        "model": "ResNet-50",
+        "validation_accuracy": 0.9962,
+        "test_known_accuracy": 0.9924,
+        "f1_score": 0.992
+    }
+}

@@ -1,0 +1,4 @@
+Method,AUROC,Average Precision (AP),TPR,FPR (lower=better),UDR (higher=better)
+Maximum Softmax Probability (MSP),0.8165,0.5782,0.8487,0.3177,0.6823
+Deep SVDD (Nearest Centroid),0.8986,0.8275,0.8413,0.1171,0.8829
+Deep Metric Learning (Triplet Loss),0.9255,0.8448,0.941,0.2525,0.7475
